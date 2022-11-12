@@ -4,7 +4,7 @@ FONTS= MathJax_Main-Regular.otf MathJax_Main-Bold.otf MathJax_Main-Italic.otf Ma
 FONTSAMPLES= $(addsuffix .pdf,$(basename $(FONTS)))
 
 %.otf:
-	wget https://raw.githubusercontent.com/mathjax/MathJax/master/fonts/HTML-CSS/TeX/otf/$@
+	wget https://a3nm.net/mathjax/fonts/HTML-CSS/TeX/otf/$@
 
 %.pdf: %.otf
 	fntsample -f $< -o $@
